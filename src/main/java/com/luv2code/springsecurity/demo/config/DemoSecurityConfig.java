@@ -40,6 +40,7 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 		
 		http.authorizeRequests()
 				.antMatchers("/registrationPage*").permitAll()
+				.antMatchers("/Register*").permitAll()
 				.anyRequest().authenticated()
 			.and()
 				.formLogin()

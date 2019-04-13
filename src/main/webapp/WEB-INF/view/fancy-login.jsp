@@ -42,8 +42,14 @@
 					    <!-- Place for messages: error, alert etc ... -->
 					    <div class="form-group">
 					        <div class="col-xs-15">
+					            
+					            <div style="color:green"><%
+								    if(null!=request.getAttribute("registerMsg"))
+								    {
+ 								       out.println(request.getAttribute("registerMsg"));
+									  }
+								%></div>
 					            <div>
-									
 									<!-- check for login error -->
 									<c:if test="${param.error != null}">
 									           

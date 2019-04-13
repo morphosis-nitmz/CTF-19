@@ -12,7 +12,7 @@ public class DatabaseConnection {
 	{
 
 	    // Database Info
-		 String db_url = "jdbc:mysql://localhost:3306/cricket"; // put your own endpoint link
+		 String db_url = "jdbc:mysql://localhost:3306/ctf"; // put your own endpoint link
 		    String db_user = "root"; //put your username 
 		    String db_password = "9102785933"; // put your password
 	    

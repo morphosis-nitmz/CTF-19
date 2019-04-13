@@ -27,21 +27,18 @@
 				<div class="panel-heading">
 					<div class="panel-title">Sign Up</div>
 				</div>
+				
+				<div style="color:red"><%
+    				if(null!=request.getAttribute("errorMessage"))
+					    {
+					        out.println(request.getAttribute("errorMessage"));
+					    }
+				%></div>
 
 				<div style="padding-top: 30px" class="panel-body">
 
-					<!-- Login Form -->
-					<form:form action="${pageContext.request.contextPath}/" method="POST" class="form-horizontal">
-
-					    <!-- Place for messages: error, alert etc ... -->
-					    <div class="form-group">
-					        <div class="col-xs-15">
-					            <div>
-
-					            </div>
-					        </div>
-					    </div>
-
+					<!-- Registration Form -->
+					<form action="Register" method="GET" class="form-horizontal">
 						<!-- User name -->
 						<div style="margin-bottom: 25px" class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
@@ -55,6 +52,13 @@
 							
 							<input type="password" name="password" placeholder="password" class="form-control" >
 						</div>
+						
+							<!-- Confirm  Password -->
+						<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span> 
+							
+							<input type="password" name="confirmPassword" placeholder="confirmPassword" class="form-control" >
+						</div>
 
 						<!-- Login/Submit Button -->
 						<div style="margin-top: 10px" class="form-group">						
@@ -63,8 +67,8 @@
 							</div>
 						</div>
 
-					</form:form>
-<a href="${pageContext.request.contextPath}/showMyLoginPage">Login</a>
+					</form>
+					<a href="${pageContext.request.contextPath}/showMyLoginPage">Login</a>
 
 				</div>
 
