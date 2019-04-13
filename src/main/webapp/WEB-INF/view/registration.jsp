@@ -39,6 +39,14 @@
 
 					<!-- Registration Form -->
 					<form action="Register" method="GET" class="form-horizontal">
+					
+						<!-- Name -->
+						<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
+							
+							<input type="text" name="name" placeholder="name" class="form-control">
+						</div>
+						
 						<!-- User name -->
 						<div style="margin-bottom: 25px" class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
