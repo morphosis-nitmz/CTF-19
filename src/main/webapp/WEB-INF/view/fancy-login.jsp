@@ -92,7 +92,7 @@
 						</div>
 
 					</form:form>
-<a href="${pageContext.request.contextPath}/registrationPage">Visit W3Schools</a>
+<a href="${pageContext.request.contextPath}/registrationPage">Sign Up</a>
 
 				</div>
 
