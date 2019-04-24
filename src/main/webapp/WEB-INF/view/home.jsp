@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
     <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
     <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -9,8 +11,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Capture The Flag</title>
+
+<meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 </head>
-<body>
+<body style="background-image: linear-gradient(to top left, #000000 0%, #3333ff 100%);">
+ 
+  
+<jsp:include page="my-header.jsp"/>
+<img src="<spring:url value="/resources/img/bck.jpg"/>" />
 	<p>
 	<h2>HelloWorld of CTF!</h2>
 	</p>
@@ -31,8 +43,10 @@
 	
 	<a href="${pageContext.request.contextPath}/questionNo1">Question 1</a>
 	
+	
 	<%String table_name = SecurityContextHolder.getContext().getAuthentication().getName(); %>
-	<%= table_name%>
+	<br>
+	<jsp:include page="my-footer.jsp"/>
 	
 </body>
 </html>

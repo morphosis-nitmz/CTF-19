@@ -2,6 +2,10 @@
     pageEncoding="ISO-8859-1"%>
     <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+    <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@ page import="org.springframework.security.core.context.SecurityContextHolder"%>
 <!doctype html>
 <html lang="en">
 
@@ -18,10 +22,15 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	
 	<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+	
 </head>
 
 <body>
+<jsp:include page="my-header.jsp"/>
+ <%
+    String name=SecurityContextHolder.getContext().getAuthentication().getName(); 
+    System.out.println(name);
+    %>
 
 	<div>
 		
@@ -75,6 +84,7 @@
 							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
 							
 							<input type="text" name="username" placeholder="username" class="form-control">
+							
 						</div>
 
 						<!-- Password -->

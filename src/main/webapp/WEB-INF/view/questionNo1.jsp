@@ -88,7 +88,7 @@ opacity:0.95;
          
     	 try{
     		 System.out.println("que hello1");
-    		 ResultSet rs = stmt.executeQuery("select * from point where ques_id='ctf001'");
+    		 ResultSet rs = stmt.executeQuery("select * from point where ques_id='"+que_id+"'");
     		 System.out.println("que hello2");
 
 		    	  while(rs.next()){

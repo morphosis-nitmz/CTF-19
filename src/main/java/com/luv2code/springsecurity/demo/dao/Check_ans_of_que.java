@@ -62,47 +62,91 @@ public class Check_ans_of_que extends HttpServlet {
 				if (db_answer.equals(answer)) {
 
 					try {
+						System.out.println("Answer is ryt..Flag work start");
 						Statement st1 = co.getConnection();
-						long current_time_stamp = System.currentTimeMillis() / 1000;
-						long diff_time_stamp = current_time_stamp - initial_time_stamp + 28000;
-
-						System.out.println("Total time stamp : " + diff_time_stamp);
-						String query_for_user_table = "insert into `" + table_name + "` values('" + ques_id + "',1, "
-								+ diff_time_stamp + ")";
-						int flag_insert_query = st1.executeUpdate(query_for_user_table);
-
-					} catch (Exception e) {
-						System.out.println(e);
-					}
-					try {
-						Statement st2 = co.getConnection();
-						ResultSet rs2 = st2.executeQuery("select * from `" + table_name + "` natural join point");
-						while (rs2.next()) {
-							String table_que_id = rs2.getString("ques_id");
-							int table_point = rs2.getInt("points");
-							total_points = total_points + table_point;
-							long table_time_Stamp = rs2.getLong("time_stamp");
+						Statement stflag = co.getConnection();
+						String flagQuery = "select flag from `" + table_name + "` where ques_id='" + ques_id + "'";
+						ResultSet rsflag = stflag.executeQuery(flagQuery);
+						int flag = 0;
+						while (rsflag.next()) {
+							flag = rsflag.getInt("flag");
 						}
-						Statement st3 = co.getConnection();
-						ResultSet rs3 = st3.executeQuery("select sum(time_stamp) from  `" + table_name + "`");
-						String time_stamp_temp = null;
-						while (rs3.next()) {
-							time_stamp_temp = rs3.getString(1);
-						}
+						System.out.println(flag);
+						if (flag == 0) {
 
-						total_time_stamp = Long.parseLong(time_stamp_temp.trim());
+							// Time stamp Work.. fetching previous time stamp them subtract it from current
+							// because we need to store time stamp for each question after completing
+							// previous question
+							long previous_time_stamp = 0;
+							try {
+								Statement stTimestamp = co.getConnection();
+								String timeStampQuery = "select time_stamp from leaderboard where username  = '"
+										+ table_name + "';";
+								ResultSet rsTimeStamp = stTimestamp.executeQuery(timeStampQuery);
+								while (rsTimeStamp.next()) {
+									previous_time_stamp = rsTimeStamp.getLong("time_stamp");
+								}
 
-						try {
-							Statement st4 = co.getConnection();
-							String leaderboard_query = "update leaderboard set time_stamp = " + total_time_stamp
-									+ ", total_points = " + total_points + "  where username  = '" + table_name + "';";
-
-							int flag_status_leaderboard = st4.executeUpdate(leaderboard_query);
-							if (flag_status_leaderboard > 0) {
-								System.out.println("Leaderboard entry successfully Updated");
+							} catch (Exception e) {
+								System.out.println(e);
 							}
+
+							System.out.println("Flag = 0 work start");
+							long current_time_stamp = System.currentTimeMillis() / 1000;
+							long diff_time_stamp = current_time_stamp - initial_time_stamp - previous_time_stamp;
+
+							System.out.println("Total time stamp : " + diff_time_stamp);
+							String query_for_user_table = "insert into `" + table_name + "` values('" + ques_id
+									+ "',1, " + diff_time_stamp + ")";
+							int flag_insert_query = st1.executeUpdate(query_for_user_table);
+
+							try {
+								Statement st2 = co.getConnection();
+								ResultSet rs2 = st2
+										.executeQuery("select * from `" + table_name + "` natural join point");
+								while (rs2.next()) {
+									String table_que_id = rs2.getString("ques_id");
+									int table_point = rs2.getInt("points");
+									total_points = total_points + table_point;
+									long table_time_Stamp = rs2.getLong("time_stamp");
+								}
+								Statement st3 = co.getConnection();
+								ResultSet rs3 = st3.executeQuery("select sum(time_stamp) from  `" + table_name + "`");
+								String time_stamp_temp = null;
+								while (rs3.next()) {
+									time_stamp_temp = rs3.getString(1);
+								}
+
+								total_time_stamp = Long.parseLong(time_stamp_temp.trim());
+
+								try {
+									Statement st4 = co.getConnection();
+									String leaderboard_query = "update leaderboard set time_stamp = " + total_time_stamp
+											+ ", total_points = " + total_points + "  where username  = '" + table_name
+											+ "';";
+
+									int flag_status_leaderboard = st4.executeUpdate(leaderboard_query);
+									if (flag_status_leaderboard > 0) {
+										System.out.println("Leaderboard entry successfully Updated");
+									}
+								} catch (Exception e) {
+									System.out.println("leader board failed");
+								}
+							} catch (Exception e) {
+								System.out.println(e);
+							}
+							System.out.println("Flag = 0 work end");
+						}
+						System.out.println("Log Works Start");
+						Statement st_logs1 = co.getConnection();
+						try {
+							String entry_query = "insert into logs values('" + table_name + "', '" + ques_id + "', '"
+									+ answer + "')";
+
+							int flag_entry = st_logs1.executeUpdate(entry_query);
+
 						} catch (Exception e) {
-							System.out.println("leader board failed");
+							System.out.println("Entry Log DataBase Error \n Don't worry We'll fix it");
 						}
 
 					} catch (Exception e) {
@@ -114,6 +158,18 @@ public class Check_ans_of_que extends HttpServlet {
 					rd.forward(request, response);
 
 				} else {
+					System.out.println("Wrong ans work start");
+					Statement st_logs = co.getConnection();
+					try {
+						System.out.println("Wrong ans log work start");
+						String entry_query = "insert into logs values('" + table_name + "', '" + ques_id + "', '"
+								+ answer + "')";
+
+						int flag_entry = st_logs.executeUpdate(entry_query);
+					} catch (Exception e) {
+						System.out.println("Entry Log DataBase Error \n Don't worry We'll fix it");
+					}
+
 					request.setAttribute("wrongAnswer", "Wrong Answer");
 					// response.sendRedirect("login.jsp");
 					RequestDispatcher rd = request.getRequestDispatcher("/questionNo1");

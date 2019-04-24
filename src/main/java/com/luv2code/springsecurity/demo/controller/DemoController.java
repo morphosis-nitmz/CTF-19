@@ -9,6 +9,12 @@ public class DemoController {
 	@GetMapping("/")
 	public String showHome() {
 
+		return "index";
+	}
+
+	@GetMapping("/home")
+	public String Home() {
+
 		return "home";
 	}
 
@@ -17,4 +23,23 @@ public class DemoController {
 
 		return "questionNo1";
 	}
+
+	@GetMapping("/leaderboard")
+	public String leaderboard() {
+
+		return "leaderboard";
+	}
+
+	@GetMapping("/dashboard")
+	public String dashboard() {
+
+		return "dashboard";
+	}
+
+	@GetMapping("/contactUs")
+	public String contactUs() {
+
+		return "contact";
+	}
+
 }

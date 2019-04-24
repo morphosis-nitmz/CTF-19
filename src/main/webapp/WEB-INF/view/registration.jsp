@@ -1,90 +1,127 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+    <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@ page import="org.springframework.security.core.context.SecurityContextHolder"%>
+<!doctype html>
+<html lang="en">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
-<meta charset="utf-8">
+	
+	<title>Login Page</title>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Reference Bootstrap files -->
-	<link rel="stylesheet"
-		 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	
-	<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Title -->
+    <title>CTF - Capture The Flag</title>
+
+    
+    
+	
 </head>
+
 <body>
+<jsp:include page="my-header.jsp"/>
+ <%
+    String name=SecurityContextHolder.getContext().getAuthentication().getName(); 
+    System.out.println(name);
+    %>
 
-		<div>
-		
-		<div id="loginbox" style="margin-top: 50px;"
-			class="mainbox col-md-3 col-md-offset-2 col-sm-6 col-sm-offset-2">
+    <!-- Contact Area Start -->
+    <section class="contact-our-area section-padding-100-0">
+        <div class="container">
+            <div class="row" style="text-align:center;">
+                <!-- Heading -->
+                <div class="col-12 pt-50">
+                    <div class="section-heading-2 text-center wow fadeInUp" data-wow-delay="300ms">
+                        <h4>Sign Up</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="col-12 col-sm-3">
+                    <div class="contact-information mb-100">
+                      
+                    </div>
+                </div>
+            
 			
-			<div class="panel panel-info">
+                <div class="col-12 col-sm-6" >
+                    <!-- Contact Form -->
+                    <div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
+                        <div class="contact_form">
+                        
+                        <!-- Place for messages: error, alert etc ... -->
+					    <div class="form-group">
+					        <div class="col-xs-15">
+					            
+					           <div style="color:red"><%
+                                    if(null!=request.getAttribute("errorMessage"))
+                                    {
+                                        out.println(request.getAttribute("errorMessage"));
+                                     }
+                                %></div>
+					        </div>
+					    </div>
+                        
+                            <form:form action="Register" method="get" id="main_contact_form">
+                                <div class="contact_input_area">
+                                    <div id="success_fail_info"></div>
+                                    <div class="row" style="text-align:center;">
+                                    
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="name" placeholder="name">
+                                            </div>
+                                        </div>
 
-				<div class="panel-heading">
-					<div class="panel-title">Sign Up</div>
-				</div>
-				
-				<div style="color:red"><%
-    				if(null!=request.getAttribute("errorMessage"))
-					    {
-					        out.println(request.getAttribute("errorMessage"));
-					    }
-				%></div>
-
-				<div style="padding-top: 30px" class="panel-body">
-
-					<!-- Registration Form -->
-					<form action="Register" method="GET" class="form-horizontal">
-					
-						<!-- Name -->
-						<div style="margin-bottom: 25px" class="input-group">
-							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
-							
-							<input type="text" name="name" placeholder="name" class="form-control">
-						</div>
-						
-						<!-- User name -->
-						<div style="margin-bottom: 25px" class="input-group">
-							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
-							
-							<input type="text" name="username" placeholder="username" class="form-control">
-						</div>
-
-						<!-- Password -->
-						<div style="margin-bottom: 25px" class="input-group">
-							<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span> 
-							
-							<input type="password" name="password" placeholder="password" class="form-control" >
-						</div>
-						
-							<!-- Confirm  Password -->
-						<div style="margin-bottom: 25px" class="input-group">
-							<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span> 
-							
-							<input type="password" name="confirmPassword" placeholder="confirmPassword" class="form-control" >
-						</div>
-
-						<!-- Login/Submit Button -->
-						<div style="margin-top: 10px" class="form-group">						
-							<div class="col-sm-6 controls">
-								<button type="submit" class="btn btn-success">Registration</button>
-							</div>
-						</div>
-
-					</form>
-					<a href="${pageContext.request.contextPath}/showMyLoginPage">Login</a>
-
-				</div>
-
-			</div>
-
-		</div>
-
-	</div>
-
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="username" placeholder="username">
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-12">
+                                            <div class="form-group">
+                                                <input type="password" class="form-control mb-30" name="password" placeholder="password">
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-12">
+                                            <div class="form-group">
+                                                <input type="password" class="form-control mb-30" name="confirmPassword" placeholder="confirmPassword">
+                                            </div>
+                                        </div>
+                                        <!-- Button -->
+                                        <div class="col-12">
+                                            <button type="submit" class="btn confer-btn">Sign Up <i class="zmdi zmdi-long-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form:form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="contact-information mb-100">
+                      
+                    </div>
+                </div>
+             </div>
+          </div>
+        
+    </section>
+    <!-- Contact Area End -->
+        <jsp:include page="my-footer.jsp"/>
+    
 </body>
+
 </html>
