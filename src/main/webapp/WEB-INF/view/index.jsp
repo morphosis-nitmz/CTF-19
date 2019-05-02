@@ -57,9 +57,10 @@
                             <ul id="nav">
                                 <li class="active"><a href="${pageContext.request.contextPath}/">Home</a></li>
                                 
-                                <li><a href="${pageContext.request.contextPath}/questionNo1">QUESTIONS</a></li>
+                                <li><a href="${pageContext.request.contextPath}/Questions">QUESTIONS</a></li>
                                 <li><a href="${pageContext.request.contextPath}/leaderboard">LEADERBOARD</a></li>
                                 <li><a href="${pageContext.request.contextPath}/contactUs">Contact</a></li>
+                                <li><a href="${pageContext.request.contextPath}/Rules">Rules</a></li>
                             </ul>
                             
                             <%
@@ -146,24 +147,26 @@
     </section>
     <!-- Welcome Area End -->
 
-    <!-- About Us And Countdown Area Start -->
+    <!-- About Us And Review Start -->
     <section class="about-us-countdown-area section-padding-100-0" id="about">
         <div class="container">
             <div class="row align-items-center">
                 <!-- About Content -->
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-7">
                     <div class="about-content-text mb-80">
                         <h6 class="wow fadeInUp" data-wow-delay="300ms">About CTF</h6>
                         <h3 class="wow fadeInUp" data-wow-delay="300ms">Welcome to CAPTURE THE FLAG</h3>
-                        <p class="wow fadeInUp" data-wow-delay="300ms">The Project Management is a platform to learn expert techniques for building successful project teams, creating efficient plans and implementing effective tracking measures to ensure your projects come in on deadline and on budget. In one fast-paced, well-designed day, we’ll cover all the essential elements of project management.</p>
-                        <a href="#" class="btn confer-btn mt-50 wow fadeInUp" data-wow-delay="300ms">Interested <i class="zmdi zmdi-long-arrow-right"></i></a>
+                        <p class="wow fadeInUp" data-wow-delay="300ms">To stop the cyber-attacker, you must think like the cyber-attacker. This is a skill that needs practice, and to get that practice, hackers created capture the flag (CTF) competitions, where they compete to own servers and gain credit.
+For aspiring white hats, CTF challenges are a great way to learn hacking techniques, strengthen your problem-solving skills, and gain critical hands-on practice. CTF competitions deal the right level of pressure to keep things interesting while helping you to sharpen your skills.
+For the pros, CTF competitions help you assess your skill level, challenge yourself among peers, and maybe even earn some bragging rights.</p>
+<!--                         <a href="#" class="btn confer-btn mt-50 wow fadeInUp" data-wow-delay="300ms">Interested <i class="zmdi zmdi-long-arrow-right"></i></a> -->
                     </div>
                 </div>
 
                 <!-- About Thumb -->
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-5">
                     <div class="about-thumb mb-80 wow fadeInUp" data-wow-delay="300ms">
-                        <img src="<spring:url value="/resources/img/bg-img/2.png"/>" alt="">
+                        <img src="<spring:url value="/resources/img/bg-img/Cybersecurity.png"/>" alt="">
                     </div>
                 </div>
             </div>
@@ -215,7 +218,7 @@
                                         <!-- Single client Info -->
                                         <div class="client-info">
                                             <h6>Ankit Kumar</h6>
-                                            <p>Treasurer</p>
+                                            <p>Winner of CTF'18 & Treasurer</p>
                                         </div>
                                     </div>
                                 </div>
@@ -229,17 +232,41 @@
                             <div class="single-client-content">
                                 <!-- Single client Text -->
                                 <div class="single-client-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                    <p>Game of logic, presence of mind and rush of adrenaline.  Perfect recipe to enjoy CTF. Anyone with a bit of knowledge in hacking can win this game,<br> Only thing is to keep in mind that you have to use google smartly.</p>
                                     <!-- Single client Thumb and info -->
                                     <div class="single-client-thumb-info d-flex align-items-center">
                                         <!-- Single client Thumb -->
                                         <div class="single-client-thumb">
-                                            <img src="<spring:url value="/resources/img/bg-img/15.jpg"/>" alt="">
+                                            <img src="<spring:url value="/resources/img/bg-img/ranjeet.jpg"/>" alt="">
                                         </div>
                                         <!-- Single client Info -->
                                         <div class="client-info">
-                                            <h6>Vipulkumar Yadav</h6>
-                                            <p>Joint-Secretary</p>
+                                            <h6>Ranjeet Kumar</h6>
+                                            <p>1st Runner Up of CTF'18</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single client Icon -->
+                                <div class="client-icon">
+                                    <i class="zmdi zmdi-quote"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Single client Slider -->
+                            <div class="single-client-content">
+                                <!-- Single client Text -->
+                                <div class="single-client-text">
+                                    <p>In Morphosis'18, it was the first time that this type of event was organised in our college. And it was an awesome experience. It mainly consist of question from Computer Science and I would like to participate this year also.</p>
+                                    <!-- Single client Thumb and info -->
+                                    <div class="single-client-thumb-info d-flex align-items-center">
+                                        <!-- Single client Thumb -->
+                                        <div class="single-client-thumb">
+                                            <img src="<spring:url value="/resources/img/bg-img/sunil.jpg"/>" alt="">
+                                        </div>
+                                        <!-- Single client Info -->
+                                        <div class="client-info">
+                                            <h6>Sunil Dinday</h6>
+                                            <p>2st Runner Up of CTF'18</p>
                                         </div>
                                     </div>
                                 </div>
@@ -262,8 +289,7 @@
                                         </div>
                                         <!-- Single client Info -->
                                         <div class="client-info">
-                                            <h6>Malsawmdawngzeli</h6>
-                                            <p>Joint-Secretary</p>
+                                            <h6>Sunday Lalbiaknia</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -272,6 +298,76 @@
                                     <i class="zmdi zmdi-quote"></i>
                                 </div>
                             </div>
+                            
+                            <!-- Single client Slider -->
+                            <div class="single-client-content">
+                                <!-- Single client Text -->
+                                <div class="single-client-text">
+                                    <p>CTF is quite the mind boggling game. In it, you have to find the answers with few hints provided. It contains a variety of questions which requires students to think out of the box. A very nice, fun and engaging idea as an event for morphosis.</p>
+                                    <!-- Single client Thumb and info -->
+                                    <div class="single-client-thumb-info d-flex align-items-center">
+                                        <!-- Single client Thumb -->
+                                        <div class="single-client-thumb">
+                                            <img src="<spring:url value="/resources/img/bg-img/alwani.jpg"/>" alt="">
+                                        </div>
+                                        <!-- Single client Info -->
+                                        <div class="client-info">
+                                            <h6>Abhishek Alwani</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single client Icon -->
+                                <div class="client-icon">
+                                    <i class="zmdi zmdi-quote"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Single client Slider -->
+                            <div class="single-client-content">
+                                <!-- Single client Text -->
+                                <div class="single-client-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                    <!-- Single client Thumb and info -->
+                                    <div class="single-client-thumb-info d-flex align-items-center">
+                                        <!-- Single client Thumb -->
+                                        <div class="single-client-thumb">
+                                            <img src="<spring:url value="/resources/img/bg-img/15.jpg"/>" alt="">
+                                        </div>
+                                        <!-- Single client Info -->
+                                        <div class="client-info">
+                                            <h6>Yatharth Mishra</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single client Icon -->
+                                <div class="client-icon">
+                                    <i class="zmdi zmdi-quote"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Single client Slider -->
+                            <div class="single-client-content">
+                                <!-- Single client Text -->
+                                <div class="single-client-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                    <!-- Single client Thumb and info -->
+                                    <div class="single-client-thumb-info d-flex align-items-center">
+                                        <!-- Single client Thumb -->
+                                        <div class="single-client-thumb">
+                                            <img src="<spring:url value="/resources/img/bg-img/akash.png"/>" alt="">
+                                        </div>
+                                        <!-- Single client Info -->
+                                        <div class="client-info">
+                                            <h6>Akash Gangwar</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single client Icon -->
+                                <div class="client-icon">
+                                    <i class="zmdi zmdi-quote"></i>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -281,15 +377,15 @@
 	</section>
         
 
-    <!-- Our Speakings Area Start -->
+    <!-- Our Developer Area Start -->
     <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(<spring:url value="/resources/img/bg-img/3.jpg"/>);">
         <div class="container">
             <div class="row">
                 <!-- Heading -->
                 <div class="col-12">
                     <div class="section-heading text-center wow fadeInUp" data-wow-delay="300ms">
-                        <p>Our Speakings</p>
-                        <h4>Who's speaking</h4>
+                        <p>Capture The Flag</p>
+                        <h4>Developers</h4>
                     </div>
                 </div>
             </div>
@@ -305,19 +401,19 @@
                     <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Thumb -->
                         <div class="speaker-single-thumb">
-                            <img src="<spring:url value="/resources/img/bg-img/4.jpg"/>" alt="">
+                            <img src="<spring:url value="/resources/img/bg-img/5.jpg"/>" alt="">
                         </div>
                         <!-- Social Info -->
                         <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                            <a href="https://www.facebook.com/abhiislikeme"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="https://www.instagram.com/abhi5h1d/"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="https://twitter.com/abhi5h1d"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/abhi1d/"><i class="zmdi zmdi-linkedin"></i></a>
                         </div>
                         <!-- Info -->
                         <div class="speaker-info">
-                            <h5>Albert Barnes</h5>
-                            <p>Founder</p>
+                            <h5>Abhishek Sharma</h5>
+                            <p>Senior Java Developer</p>
                         </div>
                     </div>
                 </div>
@@ -327,19 +423,19 @@
                     <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Thumb -->
                         <div class="speaker-single-thumb">
-                            <img src="<spring:url value="/resources/img/bg-img/5.jpg"/>" alt="">
+                            <img src="<spring:url value="/resources/img/bg-img/srv.jpg"/>" alt="">
                         </div>
                         <!-- Social Info -->
                         <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                            <a href="https://www.facebook.com/saurabhsunil95"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="https://www.instagram.com/saurabhsunil4321/"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="https://twitter.com/saurabh_sunil"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/saurabhsunil95/"><i class="zmdi zmdi-linkedin"></i></a>
                         </div>
                         <!-- Info -->
                         <div class="speaker-info">
-                            <h5>Patricia Stanley</h5>
-                            <p>Product Lead</p>
+                            <h5>Saurabh Sunil</h5>
+                            <p>Java Developer</p>
                         </div>
                     </div>
                 </div>
@@ -365,8 +461,9 @@
                 <!-- Heading -->
                 <div class="col-12">
                     <div class="section-heading-2 text-center wow fadeInUp" data-wow-delay="300ms">
-                        <p>Partners &amp; Sponsors</p>
-                        <h4>OFFICIAL SPONSOR</h4>
+                        <p>We Use</p>
+                        <h4>Technology &amp; Frameworks</h4>
+                        
                     </div>
                 </div>
             </div>
@@ -377,35 +474,35 @@
                     <div class="our-sponsor-area d-flex flex-wrap">
                         <!-- Single Sponsor -->
                         <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="<spring:url value="/resources/img/core-img/p-1.png"/>" alt=""></a>
+                            <a href="#"><img src="<spring:url value="/resources/img/core-img/aws.png"/>" alt=""></a>
                         </div>
                         <!-- Single Sponsor -->
                         <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="<spring:url value="/resources/img/core-img/p-2.png"/>" alt=""></a>
+                            <a href="#"><img src="<spring:url value="/resources/img/core-img/mysql.png"/>" alt=""></a>
                         </div>
                         <!-- Single Sponsor -->
                         <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="<spring:url value="/resources/img/core-img/p-3.png"/>" alt=""></a>
+                            <a href="#"><img src="<spring:url value="/resources/img/core-img/eclipse.png"/>" alt=""></a>
                         </div>
                         <!-- Single Sponsor -->
                         <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="<spring:url value="/resources/img/core-img/p-4.png"/>" alt=""></a>
+                            <a href="#"><img src="<spring:url value="/resources/img/core-img/java.png"/>" alt=""></a>
                         </div>
                         <!-- Single Sponsor -->
                         <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="<spring:url value="/resources/img/core-img/p-5.png"/>" alt=""></a>
+                            <a href="#"><img src="<spring:url value="/resources/img/core-img/spring.png"/>" alt=""></a>
                         </div>
                         <!-- Single Sponsor -->
                         <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="<spring:url value="/resources/img/core-img/p-6.png"/>" alt=""></a>
+                            <a href="#"><img src="<spring:url value="/resources/img/core-img/formspree.png"/>" alt=""></a>
                         </div>
                         <!-- Single Sponsor -->
                         <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="<spring:url value="/resources/img/core-img/p-7.png"/>" alt=""></a>
+                            <a href="#"><img src="<spring:url value="/resources/img/core-img/bootstrap1.png"/>" alt=""></a>
                         </div>
                         <!-- Single Sponsor -->
                         <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="<spring:url value="/resources/img/core-img/p-8.png"/>" alt=""></a>
+                            <a href="#"><img src="<spring:url value="/resources/img/core-img/colorlib.png"/>" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -441,7 +538,7 @@
                         <!-- Single Contact Info -->
                         <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
                             <p>Phone:</p>
-                            <h6>+91 9559959581</h6>
+                            <h6>+91 7005625738</h6>
                         </div>
                         <!-- Single Contact Info -->
                         <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
@@ -460,7 +557,7 @@
                     <!-- Contact Form -->
                     <div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
                         <div class="contact_form">
-                            <form action="#" method="post" id="main_contact_form">
+                            <form action="https://formspree.io/saurabhsunil4321@gmail.com" method="post" id="main_contact_form">
                                 <div class="contact_input_area">
                                     <div id="success_fail_info"></div>
                                     <div class="row">
@@ -516,24 +613,16 @@
             <div class="container">
                 <div class="row">
                     <!-- Single Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="col-12 col-sm-6 col-lg-4">
                         <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
                             <!-- Footer Logo -->
                             <a href="#" class="footer-logo"><img src="<spring:url value="/resources/img/core-img/logo1.png"/>" alt=""></a>
-                            <p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain.</p>
-
-                            <!-- Social Info -->
-                            <div class="social-info">
-                                <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                                <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                                <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                                <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                            </div>
+                            <p>Step into our world and start hacking. Defend your servers, and launch attacks on others, all using the exact same techniques that work in the real world.</p>
                         </div>
                     </div>
 
                     <!-- Single Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="col-12 col-sm-6 col-lg-4">
                         <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
                             <!-- Widget Title -->
                             <h5 class="widget-title">Contact</h5>
@@ -541,7 +630,7 @@
                             <!-- Contact Area -->
                             <div class="footer-contact-info">
                                 <p><i class="zmdi zmdi-map"></i> Dawrkawn, Chaltlang, Aizawl, Mizoram</p>
-                                <p><i class="zmdi zmdi-phone"></i> +91 9559959581</p>
+                                <p><i class="zmdi zmdi-phone"></i> +91 7005625738</p>
                                 <p><i class="zmdi zmdi-email"></i> technicalsociety@nitmz.ac.in</p>
                                 <p><i class="zmdi zmdi-globe"></i> www.morphosis.com</p>
                             </div>
@@ -549,49 +638,15 @@
                     </div>
 
                     <!-- Single Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="col-12 col-sm-6 col-lg-4">
                         <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
                             <!-- Widget Title -->
-                            <h5 class="widget-title">Workshops</h5>
-
-                            <!-- Footer Nav -->
-                            <ul class="footer-nav">
-                                <li><a href="#">OSHA Compliance</a></li>
-                                <li><a href="#">Microsoft Excel Basics</a></li>
-                                <li><a href="#">Forum Speaker Series</a></li>
-                                <li><a href="#">Tedx Moscow Conference</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Single Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Widget Title -->
-                            <h5 class="widget-title">Gallery</h5>
-
-                            <!-- Footer Gallery -->
-                            <div class="footer-gallery">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <a href="<spring:url value="/resources/img/bg-img/21.jpg"/>" class="single-gallery-item"><img src="<spring:url value="/resources/img/bg-img/21.jpg"/>" alt=""></a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="<spring:url value="/resources/img/bg-img/22.jpg"/>" class="single-gallery-item"><img src="<spring:url value="/resources/img/bg-img/22.jpg"/>" alt=""></a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="<spring:url value="/resources/img/bg-img/23.jpg"/>" class="single-gallery-item"><img src="<spring:url value="/resources/img/bg-img/23.jpg"/>" alt=""></a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="<spring:url value="/resources/img/bg-img/24.jpg"/>" class="single-gallery-item"><img src="<spring:url value="/resources/img/bg-img/24.jpg"/>" alt=""></a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="<spring:url value="/resources/img/bg-img/25.jpg"/>" class="single-gallery-item"><img src="<spring:url value="/resources/img/bg-img/25.jpg"/>" alt=""></a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="<spring:url value="/resources/img/bg-img/26.jpg"/>" class="single-gallery-item"><img src="<spring:url value="/resources/img/bg-img/26.jpg"/>" alt=""></a>
-                                    </div>
-                                </div>
+                            <!-- Social Info -->
+                            <div class="social-info mt-70">
+                                <a href="https://www.facebook.com/NITMz.morphosis/"><i class="zmdi zmdi-facebook"></i></a>
+                                <a href="https://www.instagram.com/nitmz_morphosis/"><i class="zmdi zmdi-instagram"></i></a>
+                                <a href="https://www.youtube.com/channel/UCU0PsDK19ZP25bTPTsibS4A"><i class="zmdi zmdi-youtube-play"></i></a>
+                                <a href="http://www.morphosis.org.in/"><i class="zmdi zmdi-google"></i></a>
                             </div>
                         </div>
                     </div>
@@ -607,7 +662,7 @@
                     <div class="col-12 col-md-6">
                         <div class="copywrite-text">
                             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Morphosis</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="http://www.morphosis.org.in/Our-Team.html" target="_blank">Web Team of NIT Mizoram</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                         </div>
                     </div>

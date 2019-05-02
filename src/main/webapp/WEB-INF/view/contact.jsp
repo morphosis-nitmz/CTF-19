@@ -71,7 +71,7 @@
                             <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae</p>
                         </div>
                         <div class="contact_form">
-                            <form action="#" method="post">
+                            <form action="https://formspree.io/saurabhsunil4321@gmail.com" method="post">
                                 <div class="contact_input_area">
                                     <div class="row">
                                         <!-- Form Group -->
@@ -148,7 +148,7 @@
                                 <div class="contact--info-icon">
                                     <img src="<spring:url value="/resources/img/core-img/icon-6.png"/>" alt="">
                                 </div>
-                                <h5>+91 9559959581</h5>
+                                <h5>+91 7005625738</h5>
                             </div>
                         </div>
 
@@ -182,18 +182,6 @@
 
        <jsp:include page="my-footer.jsp"/>
 
-
-    <!-- **** All JS Files ***** -->
-    <!-- jQuery 2.2.4 -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Popper -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- All Plugins -->
-    <script src="js/confer.bundle.js"></script>
-    <!-- Active -->
-    <script src="js/default-assets/active.js"></script>
 
 </body>
 

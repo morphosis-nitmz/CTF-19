@@ -55,11 +55,12 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul id="nav">
-                                <li class="active"><a href="${pageContext.request.contextPath}/">Home</a></li>
+                                <li><a href="${pageContext.request.contextPath}/">Home</a></li>
                                 
-                                <li><a href="${pageContext.request.contextPath}/questionNo1">QUESTIONS</a></li>
+                                <li><a href="${pageContext.request.contextPath}/Questions">QUESTIONS</a></li>
                                 <li><a href="${pageContext.request.contextPath}/leaderboard">LEADERBOARD</a></li>
                                 <li><a href="${pageContext.request.contextPath}/contactUs">Contact</a></li>
+                                <li><a href="${pageContext.request.contextPath}/Rules">Rules</a></li>
                             </ul>
                             
                             <%

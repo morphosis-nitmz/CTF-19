@@ -42,4 +42,16 @@ public class DemoController {
 		return "contact";
 	}
 
+	@GetMapping("/Questions")
+	public String QuestionCardView() {
+
+		return "QuestionCardView";
+	}
+
+	@GetMapping("/Rules")
+	public String Rule() {
+
+		return "rules";
+	}
+
 }

@@ -10,7 +10,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import org.springframework.security.core.context.SecurityContextHolder;
 
@@ -39,10 +38,14 @@ public class Check_ans_of_que extends HttpServlet {
 		long total_time_stamp = 0;
 
 		// taking the question id for the check_ans_of_que
-		String ques_id = null;
 
-		HttpSession ses = request.getSession(false);
-		ques_id = (String) ses.getAttribute("que_id");
+		String ques_id = request.getParameter("ques_id");
+
+		System.out.println(ques_id);
+
+		// String ques_id = null;
+		// HttpSession ses = request.getSession(false);
+		// ques_id = (String) ses.getAttribute("que_id");
 
 		// taking the answer from the input form
 
@@ -154,7 +157,7 @@ public class Check_ans_of_que extends HttpServlet {
 					}
 
 					request.setAttribute("correctAnswer", "Hurrey !!  Correct Answer");
-					RequestDispatcher rd = request.getRequestDispatcher("/questionNo1");
+					RequestDispatcher rd = request.getRequestDispatcher("/Questions");
 					rd.forward(request, response);
 
 				} else {
@@ -172,7 +175,7 @@ public class Check_ans_of_que extends HttpServlet {
 
 					request.setAttribute("wrongAnswer", "Wrong Answer");
 					// response.sendRedirect("login.jsp");
-					RequestDispatcher rd = request.getRequestDispatcher("/questionNo1");
+					RequestDispatcher rd = request.getRequestDispatcher("/Questions");
 					rd.forward(request, response);
 				}
 			}

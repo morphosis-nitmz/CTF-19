@@ -7,17 +7,25 @@
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <%@ page import="org.springframework.security.core.context.SecurityContextHolder"%>
     <%@ page import ="java.sql.*" %>
-<%@ page import ="javax.sql.*" %>
-<%@ page import = "javax.servlet.*" %>
-<%@ page import="com.luv2code.springsecurity.demo.databaseconnection.*" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	<%@ page import ="javax.sql.*" %>
+	<%@ page import = "javax.servlet.*" %>
+	<%@ page import="com.luv2code.springsecurity.demo.databaseconnection.*" %>
+
+<!doctype html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Capture The Flag</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<head lang="en">
+<meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Title -->
+    <title>CTF - Capture The Flag</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="<spring:url value="/resources/img/core-img/favicon.png"/>">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="<spring:url value="/resources/style.css"/>">
 </head>
 <body>
 	<jsp:include page="my-header.jsp"/>
