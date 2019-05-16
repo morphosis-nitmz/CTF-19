@@ -49,7 +49,7 @@ public class Check_ans_of_que extends HttpServlet {
 
 		// taking the answer from the input form
 
-		String answer = request.getParameter("sol_ctf");
+		String answer = request.getParameter("sol_ctf").toLowerCase();
 
 		try {
 
@@ -92,6 +92,10 @@ public class Check_ans_of_que extends HttpServlet {
 
 							} catch (Exception e) {
 								System.out.println(e);
+								request.setAttribute("errorMessage", "Password didn't match");
+								// response.sendRedirect("login.jsp");
+								RequestDispatcher rd = request.getRequestDispatcher("/error");
+								rd.forward(request, response);
 							}
 
 							System.out.println("Flag = 0 work start");
@@ -134,9 +138,17 @@ public class Check_ans_of_que extends HttpServlet {
 									}
 								} catch (Exception e) {
 									System.out.println("leader board failed");
+									request.setAttribute("errorMessage", "Password didn't match");
+									// response.sendRedirect("login.jsp");
+									RequestDispatcher rd = request.getRequestDispatcher("/error");
+									rd.forward(request, response);
 								}
 							} catch (Exception e) {
 								System.out.println(e);
+								request.setAttribute("errorMessage", "Password didn't match");
+								// response.sendRedirect("login.jsp");
+								RequestDispatcher rd = request.getRequestDispatcher("/error");
+								rd.forward(request, response);
 							}
 							System.out.println("Flag = 0 work end");
 						}
@@ -150,10 +162,18 @@ public class Check_ans_of_que extends HttpServlet {
 
 						} catch (Exception e) {
 							System.out.println("Entry Log DataBase Error \n Don't worry We'll fix it");
+							request.setAttribute("errorMessage", "Password didn't match");
+							// response.sendRedirect("login.jsp");
+							RequestDispatcher rd = request.getRequestDispatcher("/error");
+							rd.forward(request, response);
 						}
 
 					} catch (Exception e) {
 						System.out.println(e);
+						request.setAttribute("errorMessage", "Password didn't match");
+						// response.sendRedirect("login.jsp");
+						RequestDispatcher rd = request.getRequestDispatcher("/error");
+						rd.forward(request, response);
 					}
 
 					request.setAttribute("correctAnswer", "Hurrey !!  Correct Answer");
@@ -171,6 +191,10 @@ public class Check_ans_of_que extends HttpServlet {
 						int flag_entry = st_logs.executeUpdate(entry_query);
 					} catch (Exception e) {
 						System.out.println("Entry Log DataBase Error \n Don't worry We'll fix it");
+						request.setAttribute("errorMessage", "Password didn't match");
+						// response.sendRedirect("login.jsp");
+						RequestDispatcher rd = request.getRequestDispatcher("/error");
+						rd.forward(request, response);
 					}
 
 					request.setAttribute("wrongAnswer", "Wrong Answer");
@@ -183,6 +207,10 @@ public class Check_ans_of_que extends HttpServlet {
 
 		} catch (Exception e) {
 			System.out.println(e);
+			request.setAttribute("errorMessage", "Password didn't match");
+			// response.sendRedirect("login.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("/error");
+			rd.forward(request, response);
 		}
 
 	}

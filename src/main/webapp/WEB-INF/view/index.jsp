@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%> 
     <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
     <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -102,14 +102,14 @@
     <section class="welcome-area">
         <div class="welcome-slides owl-carousel">
             <!-- Single Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay jarallax" style="background-image: url(<spring:url value="/resources/img/bg-img/anonymous.jpg"/>);">
+            <div class="single-welcome-slide bg-img bg-overlay jarallax" style="background-image: url(<spring:url value="/resources/img/bg-img/img2.jpg"/>);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <!-- Welcome Text -->
                         <div class="col-12">
                             <div class="welcome-text text-right">
                                 <h2 data-animation="fadeInUp" data-delay="300ms">Hack <br>The World</h2>
-                                <h6 data-animation="fadeInUp" data-delay="500ms">Capture The Flag(Morphosis)</h6><br>
+                                <h6 data-animation="fadeInUp" data-delay="500ms">Capture The Flag(Morphosis'19)</h6><br>
                                 
                             </div>
                         </div>
@@ -119,7 +119,7 @@
 
 
             <!-- Single Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay jarallax" style="background-image: url(<spring:url value="/resources/img/bg-img/45.jpg"/>);">
+            <div class="single-welcome-slide bg-img bg-overlay jarallax" style="background-image: url(<spring:url value="/resources/img/bg-img/h2.png"/>);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <!-- Welcome Text -->
@@ -184,12 +184,12 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                             <div class="single-client-content">
                                 <!-- Single client Text -->
                                 <div class="single-client-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                    <p>CTF is one of the most intriguing online events conducted in Morphosis. The questions here truly push your thinking to the edge and require your logical thinking to be at the maximum level. Looking forward to put my skills on test again this year!</p>
                                     <!-- Single client Thumb and info -->
                                     <div class="single-client-thumb-info d-flex align-items-center">
                                         <!-- Single client Thumb -->
                                         <div class="single-client-thumb">
-                                            <img src="<spring:url value="/resources/img/bg-img/15.jpg"/>" alt="">
+                                            <img src="<spring:url value="/resources/img/bg-img/shantanu.jpg"/>" alt="">
                                         </div>
                                         <!-- Single client Info -->
                                         <div class="client-info">
@@ -208,12 +208,12 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                             <div class="single-client-content">
                                 <!-- Single client Text -->
                                 <div class="single-client-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                    <p>Incredible game. I've had the best experience with this. Great concept and the skills required. CTF is really exciting game. If you put the right thing at right time and are quick to think smart, you should surely participate! And yes keep your Google tabs ready!</p>
                                     <!-- Single client Thumb and info -->
                                     <div class="single-client-thumb-info d-flex align-items-center">
                                         <!-- Single client Thumb -->
                                         <div class="single-client-thumb">
-                                            <img src="<spring:url value="/resources/img/bg-img/16.jpg"/>" alt="">
+                                            <img src="<spring:url value="/resources/img/bg-img/ankit.jpg"/>" alt="">
                                         </div>
                                         <!-- Single client Info -->
                                         <div class="client-info">
@@ -232,7 +232,7 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                             <div class="single-client-content">
                                 <!-- Single client Text -->
                                 <div class="single-client-text">
-                                    <p>Game of logic, presence of mind and rush of adrenaline.  Perfect recipe to enjoy CTF. Anyone with a bit of knowledge in hacking can win this game,<br> Only thing is to keep in mind that you have to use google smartly.</p>
+                                    <p>Game of logic, presence of mind and rush of adrenaline.  Perfect recipe to enjoy CTF. Anyone with a bit of knowledge in hacking can win this game,<br> Only thing is to keep in mind that you have to use google smartly!</p>
                                     <!-- Single client Thumb and info -->
                                     <div class="single-client-thumb-info d-flex align-items-center">
                                         <!-- Single client Thumb -->
@@ -256,7 +256,7 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                             <div class="single-client-content">
                                 <!-- Single client Text -->
                                 <div class="single-client-text">
-                                    <p>In Morphosis'18, it was the first time that this type of event was organised in our college. And it was an awesome experience. It mainly consist of question from Computer Science and I would like to participate this year also.</p>
+                                    <p>In Morphosis'18, it was the first time that this type of event was organised in our college. And it was an awesome experience. It mainly consist of question from Computer Science and I would like to participate this year also!</p>
                                     <!-- Single client Thumb and info -->
                                     <div class="single-client-thumb-info d-flex align-items-center">
                                         <!-- Single client Thumb -->
@@ -280,12 +280,12 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                             <div class="single-client-content">
                                 <!-- Single client Text -->
                                 <div class="single-client-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                    <p>It was a privilege to organised CTF for the first time in Morphosis. Although the problems that we set are not the most interesting ones, lots of participants were giving their time , which was very encouraging for the organiser. I am happy that CTF '19 is coming.</p>
                                     <!-- Single client Thumb and info -->
                                     <div class="single-client-thumb-info d-flex align-items-center">
                                         <!-- Single client Thumb -->
                                         <div class="single-client-thumb">
-                                            <img src="<spring:url value="/resources/img/bg-img/15.jpg"/>" alt="">
+                                            <img src="<spring:url value="/resources/img/bg-img/sunday.jpg"/>" alt="">
                                         </div>
                                         <!-- Single client Info -->
                                         <div class="client-info">
@@ -303,7 +303,7 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                             <div class="single-client-content">
                                 <!-- Single client Text -->
                                 <div class="single-client-text">
-                                    <p>CTF is quite the mind boggling game. In it, you have to find the answers with few hints provided. It contains a variety of questions which requires students to think out of the box. A very nice, fun and engaging idea as an event for morphosis.</p>
+                                    <p>CTF is quite the mind boggling game. In it, you have to find the answers with few hints provided. It contains a variety of questions which requires students to think out of the box. A very nice, fun and engaging idea as an event for morphosis!</p>
                                     <!-- Single client Thumb and info -->
                                     <div class="single-client-thumb-info d-flex align-items-center">
                                         <!-- Single client Thumb -->
@@ -326,12 +326,12 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                             <div class="single-client-content">
                                 <!-- Single client Text -->
                                 <div class="single-client-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                    <p>CTF is a game that tests your logic and knowledge of various areas in computer science. It is like finding out something important out of nothing. I certainly enjoyed a lot playing it. Looking forward to play it again in the upcoming tech fest.</p>
                                     <!-- Single client Thumb and info -->
                                     <div class="single-client-thumb-info d-flex align-items-center">
                                         <!-- Single client Thumb -->
                                         <div class="single-client-thumb">
-                                            <img src="<spring:url value="/resources/img/bg-img/15.jpg"/>" alt="">
+                                            <img src="<spring:url value="/resources/img/bg-img/yatharth.jpg"/>" alt="">
                                         </div>
                                         <!-- Single client Info -->
                                         <div class="client-info">
@@ -349,7 +349,7 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                             <div class="single-client-content">
                                 <!-- Single client Text -->
                                 <div class="single-client-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                    <p>I solved few questions but most of the questions were tough for those who isn't from computer science background.<br> Frontend could have been made better.<br> Overall it was fun playing.</p>
                                     <!-- Single client Thumb and info -->
                                     <div class="single-client-thumb-info d-flex align-items-center">
                                         <!-- Single client Thumb -->
@@ -359,6 +359,29 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                                         <!-- Single client Info -->
                                         <div class="client-info">
                                             <h6>Akash Gangwar</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single client Icon -->
+                                <div class="client-icon">
+                                    <i class="zmdi zmdi-quote"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Single client Slider -->
+                            <div class="single-client-content">
+                                <!-- Single client Text -->
+                                <div class="single-client-text">
+                                    <p>One of the most exciting events of morphosis 2019. This game has its own thrill and excitement!<br> Loved this game a lot!<br> Hold your nerves and work hard constantly to win! Try this game! I bet you will be addicted to it!</p>
+                                    <!-- Single client Thumb and info -->
+                                    <div class="single-client-thumb-info d-flex align-items-center">
+                                        <!-- Single client Thumb -->
+                                        <div class="single-client-thumb">
+                                            <img src="<spring:url value="/resources/img/bg-img/vipul.jpg"/>" alt="">
+                                        </div>
+                                        <!-- Single client Info -->
+                                        <div class="client-info">
+                                            <h6>Vipulkumar Yadav</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -543,12 +566,12 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                         <!-- Single Contact Info -->
                         <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
                             <p>Email:</p>
-                            <h6>technicalsociety@nitmz.ac.in</h6>
+                            <h6>morphosis@nitmz.ac.in</h6>
                         </div>
                         <!-- Single Contact Info -->
                         <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
                             <p>Website:</p>
-                            <h6>www.morphosis.com</h6>
+                            <h6>www.morphosis.org.in</h6>
                         </div>
                     </div>
                 </div>
@@ -583,6 +606,11 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                                         <div class="col-12 col-lg-6">
                                             <div class="form-group">
                                                 <input type="text" class="form-control mb-30" name="subject" id="subject" placeholder="Your Number">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <input name="username" class="form-control mb-30" id="username" placeholder="<%=name %>" value="<%=name %>" readonly>
                                             </div>
                                         </div>
                                         <!-- Form Group -->
@@ -631,8 +659,8 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                             <div class="footer-contact-info">
                                 <p><i class="zmdi zmdi-map"></i> Dawrkawn, Chaltlang, Aizawl, Mizoram</p>
                                 <p><i class="zmdi zmdi-phone"></i> +91 7005625738</p>
-                                <p><i class="zmdi zmdi-email"></i> technicalsociety@nitmz.ac.in</p>
-                                <p><i class="zmdi zmdi-globe"></i> www.morphosis.com</p>
+                                <p><i class="zmdi zmdi-email"></i> morphosis@nitmz.ac.in</p>
+                                <p><i class="zmdi zmdi-globe"></i> www.morphosis.org.in</p>
                             </div>
                         </div>
                     </div>
@@ -647,6 +675,7 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                                 <a href="https://www.instagram.com/nitmz_morphosis/"><i class="zmdi zmdi-instagram"></i></a>
                                 <a href="https://www.youtube.com/channel/UCU0PsDK19ZP25bTPTsibS4A"><i class="zmdi zmdi-youtube-play"></i></a>
                                 <a href="http://www.morphosis.org.in/"><i class="zmdi zmdi-google"></i></a>
+                                <a href="https://www.linkedin.com/company/technical-society-nit-mizoram/about/"><i class="zmdi zmdi-linkedin"></i></a>
                             </div>
                         </div>
                     </div>

@@ -54,4 +54,58 @@ public class DemoController {
 		return "rules";
 	}
 
+	@GetMapping("/error")
+	public String Error() {
+
+		return "errorpage";
+	}
+
+	@GetMapping("/tri1")
+	public String tri1() {
+
+		return "tri1";
+	}
+
+	@GetMapping("/tri2")
+	public String tri2() {
+
+		return "tri2";
+	}
+
+	@GetMapping("/tri3")
+	public String tri3() {
+
+		return "tri3";
+	}
+
+	@GetMapping("/tri4")
+	public String tri4() {
+
+		return "tri4";
+	}
+
+	@GetMapping("/firstDoor")
+	public String doorFirst() {
+
+		return "door1";
+	}
+
+	@GetMapping("/doorSecond")
+	public String doorSecond() {
+
+		return "door2";
+	}
+
+	@GetMapping("/nowDoorThird")
+	public String nowDoorThird() {
+
+		return "door3";
+	}
+
+	@GetMapping("/yhoooItsFlag")
+	public String yhoooItsFlag() {
+
+		return "doorflag";
+	}
+
 }

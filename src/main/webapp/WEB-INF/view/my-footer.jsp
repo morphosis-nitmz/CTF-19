@@ -64,8 +64,8 @@
                             <div class="footer-contact-info">
                                 <p><i class="zmdi zmdi-map"></i> Dawrkawn, Chaltlang, Aizawl, Mizoram</p>
                                 <p><i class="zmdi zmdi-phone"></i> +91 7005625738</p>
-                                <p><i class="zmdi zmdi-email"></i> technicalsociety@nitmz.ac.in</p>
-                                <p><i class="zmdi zmdi-globe"></i> www.morphosis.com</p>
+                                <p><i class="zmdi zmdi-email"></i> morphosis@nitmz.ac.in</p>
+                                <p><i class="zmdi zmdi-globe"></i> www.morphosis.org.in</p>
                             </div>
                         </div>
                     </div>
@@ -80,6 +80,7 @@
                                 <a href="https://www.instagram.com/nitmz_morphosis/"><i class="zmdi zmdi-instagram"></i></a>
                                 <a href="https://www.youtube.com/channel/UCU0PsDK19ZP25bTPTsibS4A"><i class="zmdi zmdi-youtube-play"></i></a>
                                 <a href="http://www.morphosis.org.in/"><i class="zmdi zmdi-google"></i></a>
+                                <a href="https://www.linkedin.com/company/technical-society-nit-mizoram/about/"><i class="zmdi zmdi-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -144,20 +145,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             </div>
         </div>
     </footer>
-    <!-- Footer Area End -->
-
-    <!-- **** All JS Files ***** -->
-    <!-- jQuery 2.2.4 -->
-    <script src="<spring:url value="/resources/js/jquery.min.js"/>"></script>
-    <!-- Popper -->
-    <script src="<spring:url value="/resources/js/popper.min.js"/>"></script>
-    <!-- Bootstrap -->
-    <script src="<spring:url value="/resources/js/bootstrap.min.js"/>"></script>
-    <!-- All Plugins -->
-    <script src="<spring:url value="/resources/js/confer.bundle.js"/>"></script>
-    <!-- Active -->
-    <script src="<spring:url value="/resources/js/default-assets/active.js"/>"></script>
-
     
 
 </html>

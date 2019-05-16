@@ -69,6 +69,29 @@
                                 %></div>
 					        </div>
 					    </div>
+					    <div class="form-group">
+					        <div class="col-xs-15">
+					            
+					           <div style="color:red"><%
+                                    if(null!=request.getAttribute("errorMessageForUsername"))
+                                    {
+                                        out.println(request.getAttribute("errorMessageForUsername"));
+                                     }
+                                %></div>
+					        </div>
+					    </div>
+					    
+					    <div class="form-group">
+					        <div class="col-xs-15">
+					            
+					           <div style="color:red"><%
+                                    if(null!=request.getAttribute("errorMessageForEnroll"))
+                                    {
+                                        out.println(request.getAttribute("errorMessageForEnroll"));
+                                     }
+                                %></div>
+					        </div>
+					    </div>
                         
                             <form:form action="Register" method="get" id="main_contact_form">
                                 <div class="contact_input_area">
@@ -79,6 +102,13 @@
                                         <div class="col-12 col-lg-12">
                                             <div class="form-group">
                                                 <input type="text" class="form-control mb-30" name="name" placeholder="name">
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="enroll" placeholder="Enrollment No">
                                             </div>
                                         </div>
 
