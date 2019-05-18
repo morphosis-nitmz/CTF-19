@@ -41,7 +41,7 @@
 	<hr>
 	<div class="row">
 		<div class="col-12">
-			<p class="single-sponsor font-italic wow fadeInUp">
+			<p class="single-sponsor text-white font-italic wow fadeInUp">
 				1. Correct email format should be used. The character length should not be more than 45.
 			</p>
 		</div>
@@ -49,7 +49,7 @@
 	<div class="row">
 		
 		<div class="col-12">
-			<p class="single-sponsor font-italic wow fadeInUp">
+			<p class="single-sponsor text-white font-italic wow fadeInUp">
 				2. Correct phone number format should be used i.e. it should be exactly 10 digits.
 			</p>
 		</div>
@@ -57,7 +57,7 @@
 	<div class="row">
 	
 		<div class="col-12">
-			<p class="single-sponsor font-italic wow fadeInUp">
+			<p class="single-sponsor text-white font-italic wow fadeInUp">
 		
 			3. Every user should submit correct information.
  				If any user submit wrong information like email, phone number, etc. he/she is not eligible to win the prize.
@@ -69,7 +69,7 @@
 		<div class="row">
 	
 		<div class="col-12">
-			<p class="single-sponsor font-italic wow fadeInUp">
+			<p class="single-sponsor text-white font-italic wow fadeInUp">
 		
 			 
 				4. The answer or flag should be submitted following formats:		
@@ -77,12 +77,12 @@
 				
            </p>
            <br>
-           <p class ="single-sponsor font-italic wow fadeInUp" style="padding-left:10px;">
+           <p class ="single-sponsor text-white font-italic wow fadeInUp" style="padding-left:10px;">
                - No spaces should be used.
    
            </p>
             <br>
-           <p class ="single-sponsor font-italic wow fadeInUp" style="padding-left:10px;">
+           <p class ="single-sponsor text-white font-italic wow fadeInUp" style="padding-left:10px;">
                 - Only lowercase letter is allowed.
 			</p>
 		</div>
@@ -90,7 +90,7 @@
 	<div class="row">
 	
 		<div class="col-12">
-			<p class="single-sponsor font-italic wow fadeInUp">
+			<p class="single-sponsor text-white font-italic wow fadeInUp">
 		
 			<b>Disclaimer:</b> Though we have tried our best to avoid any unfortunate circumstances, but if in case any discrepancies occur and we are unable to resume the game then the player who was holding the top position on the leaderboard at the time of that event will be declared as the winner. The morphosis team will not be responsible for any inconviniences whatsoever.
            </p>

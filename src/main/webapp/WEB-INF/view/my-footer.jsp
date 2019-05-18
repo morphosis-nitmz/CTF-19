@@ -19,7 +19,7 @@
     <title>CTF - Capture The Flag</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="<spring:url value="/resources/img/core-img/favicon.png"/>">
+<%--     <link rel="icon" href="<spring:url value="/resources/img/core-img/favicon.png"/>"> --%>
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="<spring:url value="/resources/style.css"/>">

@@ -1,6 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+    <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@ page import="org.springframework.security.core.context.SecurityContextHolder"%>
+    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -24,20 +31,20 @@
 	}
 %>
 <div class="pt-50">
-	<form action="Door" method="get" id="main_contact_form">
-	<div class="row">
-	<div class="col-2"></div>
-	<div class="col-8">
-	ijfijnijdfnkjnfvvkjnvkljnfkjn<br><br>
-	<input type="text" class="form-control" name="ctfdoor"/><br>
+	<form:form action="newDoor" method="get" id="main_contact_form">
+		<div class="row">
+		<div class="col-2"></div>
+		<div class="col-8">
+	Door1: Saurabh needs topic number, He takes help from Google.<br><br>
 	
+	<input type="text" class="form-control" name="ctfdoor"/><br>
 	<input type="hidden" class="form-control" name="ques_id" value="ctfdoor1"><br>
 	<input type="submit" class="btn btn-info" value="Submit"/>
 	</div>
 	<div class="col-2"></div>
 	</div>
 	
-	</form>
+	</form:form>
 	</div>
 	
 	

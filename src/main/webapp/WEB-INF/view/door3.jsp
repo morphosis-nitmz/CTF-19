@@ -1,6 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+    <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@ page import="org.springframework.security.core.context.SecurityContextHolder"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -34,11 +41,17 @@
 	}
 %>
 <div class="pt-50">
-	<form action="Door3" method="get" id="main_contact_form">
+	<form:form action="Door3" method="get" id="main_contact_form">
 	<div class="row">
 	<div class="col-2"></div>
 	<div class="col-8">
-	Door3:<br><br>
+	Door3:<h2 class= "text-center">
+       Visit the link and fill the body/form with <br>
+{<br>
+"key":"flag of web_1"<br>
+}<br>
+<a href="https://ctf-question-2.herokuapp.com/code/upload"> Link</a>
+ </h2><br><br>
 	
 		<input type="hidden" class="form-control" name="ques_id" value="ctfdoor3"><br>
 	
@@ -50,7 +63,7 @@
 	<div class="col-2"></div>
 	</div>
 	
-	</form>
+	</form:form>
 	</div>
 	
 	

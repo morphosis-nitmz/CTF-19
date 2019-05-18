@@ -19,7 +19,7 @@
     <title>CTF - Capture The Flag</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="<spring:url value="/resources/img/core-img/favicon.png"/>">
+<%--     <link rel="icon" href="<spring:url value="/resources/img/core-img/favicon.png"/>"> --%>
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="<spring:url value="/resources/style.css"/>">
@@ -39,7 +39,7 @@
                 <nav class="classy-navbar justify-content-between" id="conferNav">
 
                     <!-- Logo -->
-                    <a class="nav-brand" href="${pageContext.request.contextPath}/"><img src="<spring:url value="/resources/img/core-img/logo1.png"/>" alt=""></a>
+                    <a class="nav-brand text-white" href="${pageContext.request.contextPath}/">CTF</a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -133,7 +133,7 @@
                                     <a class="event-author"><i class="zmdi zmdi-account"></i> By Technical Sociaty</a>
                                 </div>
                                 <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
-                                    <a href="www.nitmz.ac.in" class="btn confer-btn m-2">NIT MIZORAM <i class="zmdi zmdi-long-arrow-right"></i></a>
+                                    <a href="http://www.nitmz.ac.in" class="btn confer-btn m-2">NIT MIZORAM <i class="zmdi zmdi-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -424,7 +424,7 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                     <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Thumb -->
                         <div class="speaker-single-thumb">
-                            <img src="<spring:url value="/resources/img/bg-img/5.jpg"/>" alt="">
+                            <img src="<spring:url value="/resources/img/bg-img/abhi1d11.jpg"/>" alt="">
                         </div>
                         <!-- Social Info -->
                         <div class="social-info">
@@ -440,6 +440,29 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                         </div>
                     </div>
                 </div>
+                
+<!--                  Single Speaker Area -->
+<!--                 <div class="col-12 col-md-6 col-lg-4"> -->
+<!--                     <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms"> -->
+<!--                         Thumb -->
+<!--                         <div class="speaker-single-thumb"> -->
+<%--                             <img src="<spring:url value="/resources/img/bg-img/rohit.jpg"/>" alt=""> --%>
+<!--                         </div> -->
+<!--                         Social Info -->
+<!--                         <div class="social-info"> -->
+<!--                             <a href="https://www.facebook.com/abhiislikeme"><i class="zmdi zmdi-facebook"></i></a> -->
+<!--                             <a href="https://www.instagram.com/abhi5h1d/"><i class="zmdi zmdi-instagram"></i></a> -->
+<!--                             <a href="https://twitter.com/abhi5h1d"><i class="zmdi zmdi-twitter"></i></a> -->
+<!--                             <a href="https://www.linkedin.com/in/abhi1d/"><i class="zmdi zmdi-linkedin"></i></a> -->
+<!--                         </div> -->
+<!--                         Info -->
+<!--                         <div class="speaker-info"> -->
+<!--                             <h5>Rohit Kumwat</h5> -->
+<!--                             <p>Full Stack Developer</p> -->
+<!--                         </div> -->
+<!--                     </div> -->
+<!--                 </div> -->
+                
 
                 <!-- Single Speaker Area -->
                 <div class="col-12 col-md-6 col-lg-4">
@@ -490,6 +513,7 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                     </div>
                 </div>
             </div>
+<img src="<spring:url value="/resources/img/bg-img/abhi1d1.jpg"/>" alt="" hidden>
 
             <div class="row">
                 <div class="col-12">
@@ -633,6 +657,7 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
         </div>
     </section>
     <!-- Contact Area End -->
+<img src="<spring:url value="/resources/img/bg-img/abhi1d1.jpg"/>" alt="" hidden>
 
     <!-- Footer Area Start -->
     <footer class="footer-area bg-img bg-overlay-2 section-padding-100-0">

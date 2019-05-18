@@ -72,7 +72,7 @@
 			
       <%
          // sending the question id to the check_ans_of_que
-          String que_id = "ctf_tri2";
+          String que_id = "misc_3";
           String hint="";
           int que_point = 00;
          
@@ -82,6 +82,7 @@
     	  //database Connection
     	  DatabaseConnection obj_database_connection = new DatabaseConnection();
     	  Statement stmt = obj_database_connection.getConnection();
+    	  Statement stmt1 = obj_database_connection.getConnection();
          
     	 try{
     		 System.out.println("que hello1");
@@ -90,6 +91,7 @@
 
 		    	  while(rs.next()){
 		    		  que_point = rs.getInt("points");
+		    		  hint = rs.getString("hint");
 		    		  //hint = rs.getString("hint");
 		     		 System.out.println("que hello3");
 
@@ -114,7 +116,7 @@
    
      <div class = "row">
         <div class = "col-md-4"><h2 class= "text-center">Question ID : ${que_id.toUpperCase()}</h2></div>
-        <div class = "col-md-4"><h2 class = "text-center">Points : <% out.println(que_point);%></h2></div>
+        <div class = "col-md-4"><h2 class = "text-center">Points : <% out.println(que_point);%></h2></div><br>
         <div class = "col-md-4"><h2 class = "text-center">Hint : <% out.println(hint);%></h2></div>
      
      </div>
@@ -135,11 +137,7 @@
 
 <div class = "container card question-card">
   <h2 class= "text-center">
-       I allow HTTP to act as a stateful protocol instead of the stateless protocol it actually is. 
-   Just a small piece of data sent from a website...    </h2>
- </div> 
- <br>
- <br>
+Find the flag. <a href="https://s3.amazonaws.com/ctf-data-files/script/script2">Link</a> <br>
 		</div>
 	</div>
 	<hr>

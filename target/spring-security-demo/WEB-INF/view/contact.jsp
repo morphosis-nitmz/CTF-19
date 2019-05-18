@@ -61,6 +61,11 @@
                         <img src="<spring:url value="/resources/img/bg-img/44.jpg"/>" alt="">
                     </div>
                 </div>
+                
+                <%
+    String name=SecurityContextHolder.getContext().getAuthentication().getName();
+                            System.out.println(name);
+    %>
 
                 <!-- Contact Form -->
                 <div class="col-12 col-lg-6">
@@ -98,12 +103,18 @@
                                                 <input type="text" class="form-control mb-30" name="subject" id="subject" placeholder="Your Number">
                                             </div>
                                         </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <input name="username" class="form-control mb-30" id="username" placeholder="<%=name %>" value="<%=name %>" readonly>
+                                            </div>
+                                        </div>
                                         <!-- Form Group -->
                                         <div class="col-12">
                                             <div class="form-group">
                                                 <textarea name="message" class="form-control mb-30" id="message" cols="30" rows="6" placeholder="Message" required></textarea>
                                             </div>
                                         </div>
+                                        
                                         <!-- Button -->
                                         <div class="col-12">
                                             <button type="submit" class="btn confer-btn">Send Message <i class="zmdi zmdi-long-arrow-right"></i></button>
@@ -159,7 +170,7 @@
                                 <div class="contact--info-icon">
                                     <img src="<spring:url value="/resources/img/core-img/icon-7.png"/>" alt="">
                                 </div>
-                                <h5>technicalsociety@nitmz.ac.in</h5>
+                                <h5>morphosis@nitmz.ac.in</h5>
                             </div>
                         </div>
 
@@ -170,7 +181,7 @@
                                 <div class="contact--info-icon">
                                     <img src="<spring:url value="/resources/img/core-img/icon-8.png"/>" alt="">
                                 </div>
-                                <h5>www.morphosis.com</h5>
+                                <h5>www.morphosis.org.in</h5>
                             </div>
                         </div>
 

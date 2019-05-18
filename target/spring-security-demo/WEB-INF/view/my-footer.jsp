@@ -19,7 +19,7 @@
     <title>CTF - Capture The Flag</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="<spring:url value="/resources/img/core-img/favicon.png"/>">
+<%--     <link rel="icon" href="<spring:url value="/resources/img/core-img/favicon.png"/>"> --%>
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="<spring:url value="/resources/style.css"/>">
@@ -64,8 +64,8 @@
                             <div class="footer-contact-info">
                                 <p><i class="zmdi zmdi-map"></i> Dawrkawn, Chaltlang, Aizawl, Mizoram</p>
                                 <p><i class="zmdi zmdi-phone"></i> +91 7005625738</p>
-                                <p><i class="zmdi zmdi-email"></i> technicalsociety@nitmz.ac.in</p>
-                                <p><i class="zmdi zmdi-globe"></i> www.morphosis.com</p>
+                                <p><i class="zmdi zmdi-email"></i> morphosis@nitmz.ac.in</p>
+                                <p><i class="zmdi zmdi-globe"></i> www.morphosis.org.in</p>
                             </div>
                         </div>
                     </div>

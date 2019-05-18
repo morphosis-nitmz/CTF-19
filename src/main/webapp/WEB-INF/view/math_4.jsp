@@ -72,7 +72,7 @@
 			
       <%
          // sending the question id to the check_ans_of_que
-          String que_id = "ctf_tri3";
+          String que_id = "math_4";
           String hint="";
           int que_point = 00;
          
@@ -135,8 +135,8 @@
 
 <div class = "container card question-card">
   <h2 class= "text-center">
-       My name contains the square of 8. I am an encryption algorithm. I always put "=" or "==" at the end of my encrypted data. What am I?  </h2>
- </div> 
+  Add the Scrabbled Numbers with Noise. <a href="https://s3.amazonaws.com/ctf-data-files/maths/very_large_number_scrabbled_with_noise.txt">Link</a>
+</h2> </div> 
  <br>
  <br>
 		</div>

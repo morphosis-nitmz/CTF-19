@@ -72,7 +72,7 @@
 			
       <%
          // sending the question id to the check_ans_of_que
-          String que_id = "ctf_tri1";
+          String que_id = "misc_3";
           String hint="";
           int que_point = 00;
          
@@ -137,10 +137,7 @@
 
 <div class = "container card question-card">
   <h2 class= "text-center">
-       I am the most commonly known cipher.I have my own salad!  </h2>
- </div> 
- <br>
- <br>
+Find the flag. <a href="https://s3.amazonaws.com/ctf-data-files/script/script2">Link</a> <br>
 		</div>
 	</div>
 	<hr>

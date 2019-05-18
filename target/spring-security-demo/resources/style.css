@@ -267,6 +267,9 @@ input:required {
 
 .mr-100 {
   margin-right: 100px; }
+  
+.mr-150 {
+  margin-right: 150px; }
 
 .mb-10 {
   margin-bottom: 10px; }
@@ -306,6 +309,9 @@ input:required {
 
 .ml-100 {
   margin-left: 100px; }
+  
+.ml-150 {
+  margin-left: 150px; }
 
 .pt-50 {
   padding-top: 50px !important; }

@@ -19,7 +19,7 @@
     <title>CTF - Capture The Flag</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="<spring:url value="/resources/img/core-img/favicon.png"/>">
+<%--     <link rel="icon" href="<spring:url value="/resources/img/core-img/favicon.png"/>"> --%>
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="<spring:url value="/resources/style.css"/>">
@@ -39,7 +39,7 @@
                 <nav class="classy-navbar justify-content-between" id="conferNav">
 
                     <!-- Logo -->
-                    <a class="nav-brand" href="${pageContext.request.contextPath}/"><img src="<spring:url value="/resources/img/core-img/logo1.png"/>" alt=""></a>
+                    <a class="nav-brand text-white" href="${pageContext.request.contextPath}/">CTF</a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">

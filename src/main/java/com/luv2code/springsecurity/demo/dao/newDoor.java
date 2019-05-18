@@ -16,8 +16,8 @@ import com.luv2code.springsecurity.demo.databaseconnection.DatabaseConnection;
 /**
  * Servlet implementation class Door
  */
-@WebServlet("/Door")
-public class Door extends HttpServlet {
+@WebServlet("/newDoor")
+public class newDoor extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

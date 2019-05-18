@@ -47,9 +47,7 @@
 	 
 <%
 int rank = 1;
-
 String leaderboard_extract_data_query = "select * from leaderboard order by total_points desc,time_stamp asc;";
-
 DatabaseConnection co = new DatabaseConnection();
 Statement stmt = co.getConnection();
 ResultSet rs = stmt.executeQuery(leaderboard_extract_data_query);
@@ -81,8 +79,6 @@ while(rs.next())
 	<% 
 	rank++;
 }
-
-
 %>
 </tbody>
   </table>

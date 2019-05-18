@@ -72,7 +72,7 @@
 			
       <%
          // sending the question id to the check_ans_of_que
-          String que_id = "ctf_tri4";
+          String que_id = "math_4";
           String hint="";
           int que_point = 00;
          
@@ -135,10 +135,8 @@
 
 <div class = "container card question-card">
   <h2 class= "text-center">
-       So, you say it is difficult to know all these because you are not CSE students? 
-   That is one lame excuse, no one studied these in class! if you can not answer anything, start with this:
-   who is the chief minister of mizoram? </h2>
- </div> 
+  Add the Scrabbled Numbers with Noise. <a href="https://s3.amazonaws.com/ctf-data-files/maths/very_large_number_scrabbled_with_noise.txt">Link</a>
+</h2> </div> 
  <br>
  <br>
 		</div>

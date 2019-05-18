@@ -19,7 +19,7 @@
     <title>CTF - Capture The Flag</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="<spring:url value="/resources/img/core-img/favicon.png"/>">
+<%--     <link rel="icon" href="<spring:url value="/resources/img/core-img/favicon.png"/>"> --%>
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="<spring:url value="/resources/style.css"/>">
@@ -39,7 +39,7 @@
                 <nav class="classy-navbar justify-content-between" id="conferNav">
 
                     <!-- Logo -->
-                    <a class="nav-brand" href="${pageContext.request.contextPath}/"><img src="<spring:url value="/resources/img/core-img/logo1.png"/>" alt=""></a>
+                    <a class="nav-brand text-white" href="${pageContext.request.contextPath}/">CTF</a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -102,14 +102,14 @@
     <section class="welcome-area">
         <div class="welcome-slides owl-carousel">
             <!-- Single Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay jarallax" style="background-image: url(<spring:url value="/resources/img/bg-img/anonymous.jpg"/>);">
+            <div class="single-welcome-slide bg-img bg-overlay jarallax" style="background-image: url(<spring:url value="/resources/img/bg-img/img2.jpg"/>);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <!-- Welcome Text -->
                         <div class="col-12">
                             <div class="welcome-text text-right">
                                 <h2 data-animation="fadeInUp" data-delay="300ms">Hack <br>The World</h2>
-                                <h6 data-animation="fadeInUp" data-delay="500ms">Capture The Flag(Morphosis)</h6><br>
+                                <h6 data-animation="fadeInUp" data-delay="500ms">Capture The Flag(Morphosis'19)</h6><br>
                                 
                             </div>
                         </div>
@@ -133,7 +133,7 @@
                                     <a class="event-author"><i class="zmdi zmdi-account"></i> By Technical Sociaty</a>
                                 </div>
                                 <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
-                                    <a href="www.nitmz.ac.in" class="btn confer-btn m-2">NIT MIZORAM <i class="zmdi zmdi-long-arrow-right"></i></a>
+                                    <a href="http://www.nitmz.ac.in" class="btn confer-btn m-2">NIT MIZORAM <i class="zmdi zmdi-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -349,7 +349,7 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                             <div class="single-client-content">
                                 <!-- Single client Text -->
                                 <div class="single-client-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                                    <p>I solved few questions but most of the questions were tough for those who isn't from computer science background.<br> Frontend could have been made better.<br> Overall it was fun playing.</p>
                                     <!-- Single client Thumb and info -->
                                     <div class="single-client-thumb-info d-flex align-items-center">
                                         <!-- Single client Thumb -->
@@ -424,7 +424,7 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                     <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Thumb -->
                         <div class="speaker-single-thumb">
-                            <img src="<spring:url value="/resources/img/bg-img/5.jpg"/>" alt="">
+                            <img src="<spring:url value="/resources/img/bg-img/abhi1d11.jpg"/>" alt="">
                         </div>
                         <!-- Social Info -->
                         <div class="social-info">
@@ -440,6 +440,29 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                         </div>
                     </div>
                 </div>
+                
+<!--                  Single Speaker Area -->
+<!--                 <div class="col-12 col-md-6 col-lg-4"> -->
+<!--                     <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms"> -->
+<!--                         Thumb -->
+<!--                         <div class="speaker-single-thumb"> -->
+<%--                             <img src="<spring:url value="/resources/img/bg-img/rohit.jpg"/>" alt=""> --%>
+<!--                         </div> -->
+<!--                         Social Info -->
+<!--                         <div class="social-info"> -->
+<!--                             <a href="https://www.facebook.com/abhiislikeme"><i class="zmdi zmdi-facebook"></i></a> -->
+<!--                             <a href="https://www.instagram.com/abhi5h1d/"><i class="zmdi zmdi-instagram"></i></a> -->
+<!--                             <a href="https://twitter.com/abhi5h1d"><i class="zmdi zmdi-twitter"></i></a> -->
+<!--                             <a href="https://www.linkedin.com/in/abhi1d/"><i class="zmdi zmdi-linkedin"></i></a> -->
+<!--                         </div> -->
+<!--                         Info -->
+<!--                         <div class="speaker-info"> -->
+<!--                             <h5>Rohit Kumwat</h5> -->
+<!--                             <p>Full Stack Developer</p> -->
+<!--                         </div> -->
+<!--                     </div> -->
+<!--                 </div> -->
+                
 
                 <!-- Single Speaker Area -->
                 <div class="col-12 col-md-6 col-lg-4">
@@ -490,6 +513,7 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                     </div>
                 </div>
             </div>
+<img src="<spring:url value="/resources/img/bg-img/abhi1d1.jpg"/>" alt="" hidden>
 
             <div class="row">
                 <div class="col-12">
@@ -566,12 +590,12 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                         <!-- Single Contact Info -->
                         <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
                             <p>Email:</p>
-                            <h6>technicalsociety@nitmz.ac.in</h6>
+                            <h6>morphosis@nitmz.ac.in</h6>
                         </div>
                         <!-- Single Contact Info -->
                         <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
                             <p>Website:</p>
-                            <h6>www.morphosis.com</h6>
+                            <h6>www.morphosis.org.in</h6>
                         </div>
                     </div>
                 </div>
@@ -608,6 +632,11 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                                                 <input type="text" class="form-control mb-30" name="subject" id="subject" placeholder="Your Number">
                                             </div>
                                         </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <input name="username" class="form-control mb-30" id="username" placeholder="<%=name %>" value="<%=name %>" readonly>
+                                            </div>
+                                        </div>
                                         <!-- Form Group -->
                                         <div class="col-12">
                                             <div class="form-group">
@@ -628,6 +657,7 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
         </div>
     </section>
     <!-- Contact Area End -->
+<img src="<spring:url value="/resources/img/bg-img/abhi1d1.jpg"/>" alt="" hidden>
 
     <!-- Footer Area Start -->
     <footer class="footer-area bg-img bg-overlay-2 section-padding-100-0">
@@ -654,8 +684,8 @@ For the pros, CTF competitions help you assess your skill level, challenge yours
                             <div class="footer-contact-info">
                                 <p><i class="zmdi zmdi-map"></i> Dawrkawn, Chaltlang, Aizawl, Mizoram</p>
                                 <p><i class="zmdi zmdi-phone"></i> +91 7005625738</p>
-                                <p><i class="zmdi zmdi-email"></i> technicalsociety@nitmz.ac.in</p>
-                                <p><i class="zmdi zmdi-globe"></i> www.morphosis.com</p>
+                                <p><i class="zmdi zmdi-email"></i> morphosis@nitmz.ac.in</p>
+                                <p><i class="zmdi zmdi-globe"></i> www.morphosis.org.in</p>
                             </div>
                         </div>
                     </div>
