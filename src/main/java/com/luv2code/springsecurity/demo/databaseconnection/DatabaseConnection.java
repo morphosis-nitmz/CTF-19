@@ -10,10 +10,10 @@ public class DatabaseConnection {
 	public static Statement getConnection() throws Exception {
 
 		// Database Info
-		String db_url = "jdbc:mysql://ctfapp.c3v2efyc5o6u.us-east-1.rds.amazonaws.com:3306/ctfApp"; // put your own
+		String db_url = "jdbc:mysql://(end_point_link):3306/databasename"; // put your own
 																									// endpoint link
-		String db_user = "ctfApp"; // put your username
-		String db_password = "ctf-abhi"; // put your password
+		String db_user = "****" // put your username
+		String db_password = ********** // put your password
 
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
