@@ -7,16 +7,16 @@ Questions Point updated dynamically based on numbers of player solve the particu
 Winners determined at the end of the CTF, the player that ends with the most points will be declared thewinner. In case of a tie, the winner will be the one who solved the questions in least time.
 
 ### Tools Used
-**Eclipse EE**
-**Spring-MVC Framework**
-**Spring Security**
-**JSP**
-**Java**
-**Apache Tomcat**
-**JDBC**
-**MySQL**
+- **Eclipse EE**
+- **Spring-MVC Framework**
+- **Spring Security**
+- **JSP**
+- **Java**
+- **Apache Tomcat**
+- **JDBC**
+- **MySQL**
 
 ### Third Party Services Used
-**Amazon Web Services**
-**AWS Codestar** 
-**Formspree**
+- **Amazon Web Services**
+- **AWS Codestar** 
+- **Formspree**
